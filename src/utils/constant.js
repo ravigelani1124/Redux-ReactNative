@@ -1,17 +1,18 @@
 import Routes from '../navigator/route';
 
 export const DashboardList = [
-  {title: 'Redux Demo', navigation: Routes.ReduxThunkDemo},
+  { title: 'Redux Thunk with Hooks', navigation: Routes.ReduxThunkDemo },
+  { title: 'Redux Persist (Storage)', navigation: Routes.ReduxThunkDemo }
 ];
 
 export const UserDetails = {
-  userName : 'Enter Full Name',
-  userEmail : 'Enter Email',
-  userMobile : 'Enter Mobile Number',
-  userImage : 'Enter profile URL'
+  userName: 'Enter Full Name',
+  userEmail: 'Enter Email',
+  userMobile: 'Enter Mobile Number',
+  userImage: 'Enter Address'
 }
 
 export const ButtonStrings = {
-  btnAdd : 'Add',
-  btnViewAll : 'View All' 
+  btnAdd: 'Add',
+  btnViewAll: 'View All Users'
 }

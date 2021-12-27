@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import DashboardScreen from '../screens/dashboard';
 import Routes from './route';
 import ReduxThunkDemoScreen from '../screens/reduxthunkdemo'
+import ViewUserListScreen from '../screens/viewUserList';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,10 @@ function AppNavigator() {
         <Stack.Screen
           name={Routes.ReduxThunkDemo}
           component={ReduxThunkDemoScreen}
+        />
+        <Stack.Screen
+          name={Routes.ViewUserList}
+          component={ViewUserListScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>

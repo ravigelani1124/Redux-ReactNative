@@ -1,7 +1,9 @@
+import ViewUserListScreen from "../screens/viewUserList"
 
 const Routes = {
     Dashboard: 'Dashboard',
-    ReduxThunkDemo: 'ReduxThunkDemo'
+    ReduxThunkDemo: 'ReduxThunkDemo',
+    ViewUserList: 'ViewUserList'
 }
 
 
