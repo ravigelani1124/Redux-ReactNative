@@ -9,7 +9,9 @@ const styles = StyleSheet.create({
         marginVertical: 5
     },
     uContainer: {
-        marginHorizontal: 10,
+        flex : 1,
+        marginEnd : 15,
+        marginStart : 15
     },
     tUserTitle: {
         fontSize: 16,

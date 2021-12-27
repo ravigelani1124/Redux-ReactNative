@@ -2,7 +2,7 @@ import Routes from '../navigator/route';
 
 export const DashboardList = [
   { title: 'Redux Thunk with Hooks', navigation: Routes.ReduxThunkDemo },
-  { title: 'Redux Persist (Storage)', navigation: Routes.ReduxThunkDemo }
+  { title: 'Redux Persist (Storage)', navigation: Routes.ViewUserList }
 ];
 
 export const UserDetails = {
