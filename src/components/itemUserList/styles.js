@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginHorizontal: 20,
         paddingVertical: 10,
-        marginVertical : 5
+        marginVertical: 5
     },
     uContainer: {
         marginHorizontal: 10,
@@ -14,17 +14,16 @@ const styles = StyleSheet.create({
     tUserTitle: {
         fontSize: 16,
         color: Color.black,
-        justifyContent:'flex-start',
-        alignItems : 'flex-start'
+        justifyContent: 'flex-start',
+        alignItems: 'flex-start'
     },
     tUserDetail: {
         fontSize: 14,
-        color: Color.gray
+        color: Color.gray,
     },
-    imageuser : {
-        width : 70,
-        height : 70,
-        
+    imageuser: {
+        width: 70,
+        height: 70,
     }
 })
 

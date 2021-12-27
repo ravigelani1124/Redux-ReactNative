@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Pressable } from 'react-native';
 import styles from './styles';
 import { UserDetails, ButtonStrings } from '../../utils/constant';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import { userDetailsAction } from '../../redux/action/userDetails';
 import { useNavigation } from '@react-navigation/core';
 import Routes from '../../navigator/route';
@@ -17,18 +17,26 @@ const ReduxThunkDemoScreen = props => {
   const [mobile, setMobile] = useState('');
   const [image, setImage] = useState('');
 
+  const dispatch = useDispatch()
   const addDataInRedux = () => {
-    props.addDataInList({
+    // props.addDataInList({
+    //   name: name,
+    //   email: email,
+    //   mobile: mobile,
+    //   image: image
+    // });
+
+    dispatch(userDetailsAction({
       name: name,
       email: email,
       mobile: mobile,
       image: image
-    });
+    }))
 
     setName('')
     setEmail('')
     setMobile('')
-    setImage(' ')
+    setImage('')
     alert('User added successfully')
   };
 
